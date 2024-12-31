@@ -1,0 +1,36 @@
+{
+    "academy_name": "Harmonic Music Academy",
+    "location": "Pokhara, Gandaki Pradesh, Nepal",
+    "courses": [
+        {
+            "course_name": "Singing Lessons",
+            "description": "A course for your vocals and improve your singing abilities.",
+            "duration": "4 weeks",
+            "price": "NPR 12,999"
+        },
+        {
+            "course_name": "Beginner Guitar Lessons",
+            "description": "An introductory course for those new to playing the guitar.",
+            "duration": "8 weeks",
+            "price": "NPR 9,999"
+        },
+        {
+            "course_name": "Advanced Piano Techniques",
+            "description": "A course designed for experienced pianists looking to refine their skills.",
+            "duration": "12 weeks",
+            "price": "NPR 15,999"
+        }
+    ],
+    "features": [
+        "Experienced instructors",
+        "Flexible class schedules",
+        "State-of-the-art facilities",
+        "Individual and group lessons",
+        "Performance opportunities"
+    ],
+    "contact": {
+        "email": "info@harmonicmusicacademy.com",
+        "phone": "+977-61-XXXXXXX",
+        "website": "https://harmonicmusicacademy.com"
+    }
+}
