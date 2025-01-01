@@ -30,12 +30,12 @@ const Navbar = () => {
         initial={{ top: 0 }} // Initial position
         animate={{top: isVisible?0 : -100}}
         transition={{ duration: 0.3 }} // Smooth transition for 0.3s
-        className="nav sticky  left-0 p-6 flex justify-around items-center w-full z-50"
+        className="nav sticky bg-gradient-to-b from-black to-transparent left-0 p-6 flex justify-around items-center w-full z-50"
       >
-        <div className="logo font-kanit text-3xl font-semibold">
-          <Link href={"./"} ><h1>HMusic.</h1> </Link>
+        <div className="logo font-kanit text-3xl text-white font-semibold">
+          <Link href={"./"} ><h1>HMusic<span className="text-yellow-500">.</span></h1> </Link>
         </div>
-        <div className="links bg-gray-400 bg-opacity-40  w-2/5 h-16 rounded-3xl text-white flex justify-around items-center font-inter backdrop-filter backdrop-blur-sm">
+        <div className="links bg-white bg-opacity-40  w-2/5 h-16 rounded-3xl text-white flex justify-around items-center font-inter backdrop-filter backdrop-blur-md">
           <Link href={"./courses.jsx"} className="">
             Courses
           </Link>
@@ -47,11 +47,11 @@ const Navbar = () => {
           </Link>
         </div>
         <motion.div
-          whileHover={{ backgroundColor: "#f9f7f7" }}
+          whileHover={{ backgroundColor: "#f8eacd" }}
           whileTap={{ scale: 0.9 }}
-          className="btn font-inter font-semibold bg-gray-300 px-7 py-3 cursor-pointer rounded-lg "
+          className="btn font-inter font-semibold bg-white px-7 py-3 cursor-pointer rounded-lg "
         >
-          <motion.button className="text-black">Sign In</motion.button>
+          <motion.button className="text-yellow-950">Sign In</motion.button>
         </motion.div>
       </motion.div>
     </>
