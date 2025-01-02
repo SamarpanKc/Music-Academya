@@ -35,23 +35,23 @@ const Navbar = () => {
         <div className="logo font-kanit text-3xl text-white font-semibold">
           <Link href={"./"} ><h1>HMusic<span className="text-yellow-500">.</span></h1> </Link>
         </div>
-        <div className="links bg-white bg-opacity-40  w-2/5 h-16 rounded-3xl text-white flex justify-around items-center font-inter backdrop-filter backdrop-blur-md">
+        <div className="links hidden  bg-white bg-opacity-40  w-2/5 h-16 rounded-3xl text-white md:flex justify-around items-center font-inter backdrop-filter backdrop-blur-md select-none">
           <Link href={"./courses.jsx"} className="">
-            Courses
+            <motion.h1 whileHover={{ color: "#f8eacd" }}>Courses</motion.h1>
           </Link>
           <Link href={""} className="">
-            Features
+            <motion.h1 whileHover={{ color: "#f8eacd" }}>Features</motion.h1>
           </Link>
           <Link href={"#"} className="">
-            About Us
+            <motion.h1 whileHover={{ color: "#f8eacd" }}>About Us</motion.h1>
           </Link>
         </div>
         <motion.div
           whileHover={{ backgroundColor: "#f8eacd" }}
           whileTap={{ scale: 0.9 }}
-          className="btn font-inter font-semibold bg-white px-7 py-3 cursor-pointer rounded-lg "
+          className="btn font-inter font-semibold bg-white px-4 lg:px-7 py-3 cursor-pointer rounded-lg "
         >
-          <motion.button className="text-yellow-950">Sign In</motion.button>
+          <Link href={"../signuppage"}><motion.button className="select-none text-yellow-950">Sign Up</motion.button></Link>
         </motion.div>
       </motion.div>
     </>
