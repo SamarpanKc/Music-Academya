@@ -2,9 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
-
-// import { faCaretUp } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 const Course = ({ courseName, description, duration, price, imageSrc }) => {
   return (
@@ -20,7 +18,7 @@ const Course = ({ courseName, description, duration, price, imageSrc }) => {
           <h1 className="text-2xl font-bold text-yellow-950">
             {courseName}
           </h1>
-          <p className="text-yellow-900 leading-5">{description}</p>
+          <p className="text-gray-800 leading-5">{description}</p>
         </div>
 
         <div className="price flex justify-between   items-center mx-5">
@@ -39,6 +37,7 @@ const Course = ({ courseName, description, duration, price, imageSrc }) => {
           >
             Details
           </motion.button>
+          <Link href={"../signuppage"}>
           <motion.button
             whileHover={{
               color: "#3e150a",
@@ -49,7 +48,7 @@ const Course = ({ courseName, description, duration, price, imageSrc }) => {
             className="bg-yellow-600 text-yellow-50 font-inter font-bold py-1 px-12 rounded-lg flex items-center gap-2"
           >
             Enroll Now
-          </motion.button>
+          </motion.button></Link>
         </div>
       </motion.div>
     </>

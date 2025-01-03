@@ -9,8 +9,8 @@ const SmallCard =({featureName, description, icons}) =>{
         <span className="flex justify-center">
         <FontAwesomeIcon icon={icons} size="2xl" />
           </span>
-            <h1 className="text-2xl font-inter font-semibold">{featureName}</h1>
-            <p className=" text-yellow-900 font-inter leading-5">{description}</p>
+            <h1 className="text-2xl text-center font-inter font-semibold">{featureName}</h1>
+            <p className=" text-gray-800 text-center font-inter leading-5">{description}</p>
           </motion.div>
         </>
     )

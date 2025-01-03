@@ -10,9 +10,13 @@ import SamllCard from "./components/smallcard";
 import Singing from "./images/singingman.webp";
 import Guitarist from "./images/guitarist.jpg"
 import Pianoist from "./images/pianoist.jpg"
+import User1 from "./images/test1.jpg"
+import User2 from "./images/test2.jpg"
+
 
 //icons
 import { faPersonChalkboard, faUserClock, faBuildingUser, faUserGroup, faStar, faMedal } from "@fortawesome/free-solid-svg-icons";
+import Testimonial from "./components/testimonial";
 
 
 export default function Home() {
@@ -31,7 +35,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <div className="courses h-full mx-auto flex flex-col px-16 lg:px-36 gap-8">
+      <div id="courses" className="courses h-full mx-auto flex flex-col px-16 lg:px-36 gap-8">
         <h1 className="title text-3xl text-center md:text-start font-kanit font-semibold underline">
           Courses
         </h1>
@@ -41,7 +45,7 @@ export default function Home() {
           <Course imageSrc={Pianoist} courseName="Piano Techniques" description="A course designed for experienced pianists looking to refine their skills." duration="10 weeks" price="NPR 15,999" />
         </div>
       </div>
-      <div className="features flex flex-col px-4 md:px-36 gap-8">
+      <div id="features" className="features flex flex-col px-4 md:px-36 gap-8">
         <h1 className="title text-3xl text-center md:text-start font-kanit font-semibold underline">
           Features
         </h1>
@@ -52,7 +56,15 @@ export default function Home() {
           <SamllCard icons={faUserGroup} featureName= "Individual & group lessons" description={"Whether you prefer one-on-one mentoring or the collaborative energy of group classes, we offer both options to cater to your learning style."} />
           <SamllCard icons={faStar} featureName= "Performance opportunities" description={"Showcase your skills in live performances and events, gaining invaluable real-world experience and building your confidence."} />
           <SamllCard icons={faMedal} featureName= "Rewards Certificate" description={"Receive an official certificate upon course completion, recognizing your achievements and enhancing your professional profile."} />
-          
+        </div>
+      </div>
+      <div className="testimonials flex flex-col px-4 md:px-36 gap-8 mb-24">
+      <h1 className="title text-3xl text-center md:text-start font-kanit font-semibold underline">
+      Testimonials
+        </h1>
+        <div className="cards flex justify-around gap-6 mb-24">
+          <Testimonial imageSrc={User1} Name={"Roshni Rajabashi"} comment={"Joining Harmony Music Academy was a life-changing decision for me. Before enrolling, singing was just a hobby I kept to myself. Thanks to the incredible mentors, I was able to refine my skills, understand the art of performance, and even produce and release my very own song! The journey from learning to sing to becoming a recording artist has been truly magical, and it wouldn't have been possible without Harmony Music Academy."} icons={faStar} />
+          <Testimonial imageSrc={User2} Name={"Ganesh Thapa"} comment={"I always dreamed of playing the guitar, but I never imagined that one day I’d be composing and releasing my own music. The instructors at Harmony are not just talented but also incredibly supportive. They taught me everything from the basics of guitar playing to advanced techniques and songwriting. With their guidance, I gained the confidence to create, perform, and even produce my own song."} icons={faStar} />
         </div>
       </div>
     </>

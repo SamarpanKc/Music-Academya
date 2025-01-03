@@ -36,10 +36,10 @@ const Navbar = () => {
           <Link href={"./"} ><h1>HMusic<span className="text-yellow-500">.</span></h1> </Link>
         </div>
         <div className="links hidden  bg-white bg-opacity-40  w-2/5 h-16 rounded-3xl text-white md:flex justify-around items-center font-inter backdrop-filter backdrop-blur-md select-none">
-          <Link href={"./courses.jsx"} className="">
+          <Link href={"#courses"} className="">
             <motion.h1 whileHover={{ color: "#f8eacd" }}>Courses</motion.h1>
           </Link>
-          <Link href={""} className="">
+          <Link href={"#features"} className="">
             <motion.h1 whileHover={{ color: "#f8eacd" }}>Features</motion.h1>
           </Link>
           <Link href={"#"} className="">
