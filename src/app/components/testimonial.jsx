@@ -8,7 +8,7 @@ const Testimonial = ({ Name, comment, imageSrc, icons }) => {
     <>
       <motion.div
         whileHover={{ scale: 1.02 }}
-        className="container p-6 md:p-10 w-full max-w-2xl bg-yellow-100 rounded-2xl text-yellow-950 shadow-md flex flex-col md:flex-row items-center gap-6"
+        className="container p-6 md:p-10 w-full max-w-2xl bg-yellow-100 rounded-2xl text-yellow-950 shadow-md flex flex-col lg:flex-row items-center gap-6"
       >
         {/* Left Section */}
         <div className="left flex flex-col items-center">

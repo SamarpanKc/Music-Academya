@@ -19,7 +19,7 @@ const HeroSection = () => {
           className="traingle relative top-32 left-44 lg:left-3/4 w-0 h-0 border-l-[150px] border-l-transparent border-r-[50px] border-r-transparent border-b-[150px] bg-gray-400 blur-2xl opacity-30"
         ></motion.div>
       </div>
-      <div className="hero-container flex flex-col justify-center items-center px-20 lg:gap-6 mb-16 z-10">
+      <div className="hero-container flex flex-col justify-center items-center px-36 lg:gap-6 mb-16 z-10">
         <h1 className="main-txt text-7xl font-kanit font-medium bg-gradient-to-l from-gray-100 to-yellow-50 bg-clip-text text-transparent text-center">
           Synth Your Musical Journey!
         </h1>

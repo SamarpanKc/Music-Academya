@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
 import Link from "next/link";
+import CourseDetails from "../[id]/page";
+
 
 const Course = ({ courseName, description, duration, price, imageSrc }) => {
   return (
@@ -29,14 +31,15 @@ const Course = ({ courseName, description, duration, price, imageSrc }) => {
         </div>
 
         <div className="buttons flex justify-between m-4">
+          <Link href="/1">
           <motion.button
             whileHover={{
               opacity: 0.7,
             }}
-            className="border-solid border-2 border-yellow-900 text-yellow-950 font-inter font-bold py-1 md:px-4 px-1 rounded-lg"
+            className="border-solid border-2 border-yellow-900 text-yellow-950 font-inter font-bold py-1 md:px-4 px-1 rounded-lg" 
           >
             Details
-          </motion.button>
+          </motion.button></Link>
           <Link href={"../signuppage"}>
           <motion.button
             whileHover={{
