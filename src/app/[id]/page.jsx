@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Singing from "../images/singingman.webp";
 
-const CourseDetails = () => {
+const CourseDetails = ({Course, Description, Duration, Time, Price}) => {
   return (
     <>
       <div
@@ -63,7 +63,6 @@ const CourseDetails = () => {
                   Let’s make music together!
                 </span>
               </h1>
-              
             </div>
           </div>
         </div>
@@ -75,7 +74,7 @@ const CourseDetails = () => {
             width={900}
           /><div className="last flex items-center justify-around">
                 <h1 className="text-white font-bold text-center">
-                  NRP 13999
+                  NRP 12999
                 </h1>
                 <button className="px-20 py-3 rounded-xl bg-white text-yellow-800 font-bold">
                   Enroll Now

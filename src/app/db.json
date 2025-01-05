@@ -1,0 +1,64 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "courseName": "Singing Course",
+            "description": "This course is designed to help students explore and develop their vocal abilities, regardless of their starting point. Whether you're a beginner or an intermediate vocalist, this program will refine your skills and build your confidence in singing.",
+            "duration": "8 weeks",
+            "price": "$199",
+            "imgSrc": "/images/singing-course.jpg",
+            "details": {
+                "classes": "Twice a week (1.5 hours per session)",
+                "practicalSessions": "Weekly individual performance practice",
+                "learning": [
+                    "Fundamentals of Singing",
+                    "Voice Training & Control",
+                    "Music Theory for Singers",
+                    "Performance Skills",
+                    "Advanced Techniques",
+                    "Recording Basics"
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "courseName": "Guitar Course",
+            "description": "This course is designed to help students explore and develop their guitar abilities, regardless of their starting point. Whether you're a beginner or an intermediate guitarist, this program will refine your skills and build your confidence in guitar playing.",
+            "duration": "6 weeks",
+            "price": "$249",
+            "imgSrc": "/images/guitar-course.jpg",
+            "details": {
+                "classes": "Twice a week (2 hours per session)",
+                "practicalSessions": "Weekly individual practice session",
+                "learning": [
+                    "Basic Chord Progressions",
+                    "Strumming Techniques",
+                    "Fingerpicking Styles",
+                    "Music Theory for Guitar",
+                    "Improvisation Skills",
+                    "Songwriting Fundamentals"
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "courseName": "Piano Course",
+            "description": "This course is designed to help students explore and develop their piano abilities, regardless of their starting point. Whether you're a beginner or an intermediate pianist, this program will refine your skills and build your confidence in piano playing.",
+            "duration": "10 weeks",
+            "price": "$299",
+            "imgSrc": "/images/piano-course.jpg",
+            "details": {
+                "classes": "Once a week (2 hours per session)",
+                "practicalSessions": "Self-practice sessions in the piano room",
+                "learning": [
+                    "Basic Piano Techniques",
+                    "Reading Music Sheets",
+                    "Chord Voicings and Inversions",
+                    "Music Theory for Piano",
+                    "Playing Scales and Arpeggios",
+                    "Classical and Modern Repertoire"
+                ]
+            }
+        }
+    ]
+}

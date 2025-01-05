@@ -21,7 +21,7 @@ const Course = ({ courseName, description, duration, price, imageSrc }) => {
             {courseName}
           </h1>
           <p className="text-gray-800 leading-5">{description}</p>
-        </div>
+        </div>  
 
         <div className="price flex justify-between   items-center mx-5">
           <p className="text-yellow-950 font-inter">{duration}</p>
