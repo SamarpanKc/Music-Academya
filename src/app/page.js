@@ -3,7 +3,7 @@ import Image from "next/image";
 
 //Components
 import HeroSection from "./components/herosec";
-import Course from "./components/courses";
+import Course from "./course/page";
 import SamllCard from "./components/smallcard";
 
 // images

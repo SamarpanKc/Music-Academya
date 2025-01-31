@@ -1,7 +1,9 @@
 import Image from "next/image";
-import Singing from "../images/singingman.webp";
+import Singing from "@/app/images/singingman.webp";
+import Course from "../page";
+import courseData from "../courseData";
 
-const CourseDetails = ({Course, Description, Duration, Time, Price}) => {
+const CourseDetails = ({courseName, Description, Duration, Time, Price}) => {
   return (
     <>
       <div
@@ -11,7 +13,7 @@ const CourseDetails = ({Course, Description, Duration, Time, Price}) => {
         <div className="right flex flex-col gap-8 font-inter">
           <div className="top">
             <h1 className="text-4xl underline font-bold font-kanit text-yellow-50">
-              Singing Course
+              {Course.courseName}
             </h1>
             <p className="mt-2 leading-5">
               This course is designed to help students explore and develop their
