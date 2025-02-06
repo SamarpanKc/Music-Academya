@@ -85,7 +85,7 @@ const SignIn = () => {
                 })}
               />
               {errors.email && (
-                <span className="flex text-red-500 text-sm">{errors.email.message}</span>
+                <span className="flex text-white underline text-sm">{errors.email.message}</span>
               )}
             </div>
             <div className="username">
@@ -103,7 +103,7 @@ const SignIn = () => {
                 })}
               />
               {errors.userName && (
-                <span className="flex text-red-500 text-sm">{errors.userName.message}</span>
+                <span className="flex text-white underline text-sm">{errors.userName.message}</span>
               )}
             </div>
             <div className="phone">
@@ -121,7 +121,7 @@ const SignIn = () => {
                 })}
               />
               {errors.phone && (
-                <span className=" flex text-red-500 text-sm">{errors.phone.message}</span>
+                <span className=" flex text-white underline text-sm">{errors.phone.message}</span>
               )}
             </div>
             <div className="password">
@@ -147,7 +147,7 @@ const SignIn = () => {
                 </small>
               </div>
               {errors.password && (
-                <span className="text-red-500 text-sm">{errors.password.message}</span>
+                <span className="text-white underline text-sm">{errors.password.message}</span>
               )}
             </div>
             <motion.button
