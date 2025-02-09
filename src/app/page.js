@@ -62,7 +62,7 @@ export default function Home() {
       <h1 className="title text-3xl text-center md:text-start font-kanit font-semibold underline">
       Testimonials
         </h1>
-        <div className="cards flex flex-col md:flex-row p-4 justify-around gap-6 mb-24">
+        <div className="cards flex flex-col md:flex-row p-4 justify-around gap-6 md:mb-24 ">
           <Testimonial imageSrc={User1} Name={"Roshni Rajabashi"} comment={"Joining Harmony Music Academy was a life-changing decision for me. Before enrolling, singing was just a hobby I kept to myself. Thanks to the incredible mentors, I was able to refine my skills, understand the art of performance, and even produce and release my very own song! The journey from learning to sing to becoming a recording artist has been truly magical, and it wouldn't have been possible without Harmony Music Academy."} icons={faStar} />
           <Testimonial imageSrc={User2} Name={"Ganesh Thapa"} comment={"I always dreamed of playing the guitar, but I never imagined that one day I’d be composing and releasing my own music. The instructors at Harmony are not just talented but also incredibly supportive. They taught me everything from the basics of guitar playing to advanced techniques and songwriting. With their guidance, I gained the confidence to create, perform, and even produce my own song."} icons={faStar} />
         </div>

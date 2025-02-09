@@ -11,15 +11,15 @@ const Testimonial = ({ Name, comment, imageSrc, icons }) => {
         className="container p-6 md:p-10 w-full max-w-2xl bg-yellow-100 rounded-2xl text-yellow-950 shadow-md flex flex-col lg:flex-row items-center gap-6"
       >
         {/* Left Section */}
-        <div className="left flex flex-col items-center">
+        <div className="left flex md:flex-col items-center gap-5">
           <Image
-            className="rounded-full"
+            className="rounded-full md:w-52 md"
             src={imageSrc}
             alt={Name}
-            width={200}
-            height={200}
+            width={70}
+            height={70}
           />
-          <h1 className="text-2xl font-semibold mt-4 text-center">{Name}</h1>
+          <h1 className="text-2xl font-semibold md:mt-4 text-center">{Name}</h1>
         </div>
 
         {/* Right Section */}
