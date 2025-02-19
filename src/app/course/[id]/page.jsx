@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Singing from "@/app/images/singingman.webp";
 import Course from "../page";
-import courseData from "../courseData";
 
 const CourseDetails = ({courseName, Description, Duration, Time, Price}) => {
   return (
