@@ -32,7 +32,7 @@ export default function Home() {
           <Course />
         </div>
       </div>
-      <div id="features" className="features flex flex-col px-6 lg:px-36 gap-8">
+      <div id="features" className="features flex flex-col px-6 lg:px-32 gap-8">
         <h1 className="title text-3xl md:text-start font-kanit font-semibold underline">
           Features
         </h1>

@@ -2,6 +2,13 @@
 import Link from "next/link";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/nextjs";
 
 const Navbar = () => {
   const [isVisible, setisVisible] = useState(true);
@@ -20,19 +27,6 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [lastScrollY]);
-
-  // const controlNav = () => {
-  //   const onHomePage = window.location.pathname === "/";
-  //   const onCourseDetails = window.location.pathname === "/course/[id]";
-  //   onclick({
-  //     if(onHomePage) {
-  //       window.scrollTo({ top: 0, behavior: "smooth" });
-  //     },
-  //     if(onCourseDetails) {
-  //       window.scrollTo({ top: 1000, behavior: "smooth" });
-  //     },
-  //   });
-  // };
 
   return (
     <>
@@ -60,17 +54,26 @@ const Navbar = () => {
             <motion.h1 whileHover={{ color: "#f8eacd" }}>About Us</motion.h1>
           </Link>
         </div>
-        <Link href={"../signuppage"}>
-          <motion.div
-            whileHover={{ backgroundColor: "#f8eacd" }}
-            whileTap={{ scale: 0.9 }}
-            className="btn font-inter font-semibold bg-white px-4 lg:px-7 py-3 cursor-pointer rounded-lg "
-          >
-            <motion.button className="select-none text-yellow-950">
+        <motion.div
+          whileTap={{ scale: 0.9 }}
+          className="btn font-inter font-semibold cursor-pointer"
+        >
+          <SignedOut>
+            <SignInButton>
+              <motion.button className="select-none hover:bg-yellow-100 text-yellow-950 bg-white px-4 lg:px-7 py-3 rounded-lg">
+          Sign Up
+              </motion.button>
+            </SignInButton>
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
+
+          {/* <motion.button className="select-none text-yellow-950">
               Sign Up
-            </motion.button>
-          </motion.div>
-        </Link>
+            </motion.button> */}
+        </motion.div>
+        {/* </Link> */}
       </motion.div>
     </>
   );

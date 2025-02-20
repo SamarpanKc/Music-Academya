@@ -17,7 +17,7 @@ const Course = ({ courseName, description, duration, price, imageSrc, id }) => {
           <Image
             className="mt-4 rounded-2xl md:w-72"
             src={imageSrc}
-            alt={courseName}
+            alt={courseName}  
             width={250}
             height={250}
           />
@@ -44,7 +44,7 @@ const Course = ({ courseName, description, duration, price, imageSrc, id }) => {
               Details
             </motion.button>
           </Link>
-          <Link href={"../signuppage"}>
+          <Link href={"/forum"}>
             <motion.button
               whileHover={{
                 color: "#84341c",
