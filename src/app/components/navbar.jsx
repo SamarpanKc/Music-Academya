@@ -21,6 +21,19 @@ const Navbar = () => {
     };
   }, [lastScrollY]);
 
+  // const controlNav = () => {
+  //   const onHomePage = window.location.pathname === "/";
+  //   const onCourseDetails = window.location.pathname === "/course/[id]";
+  //   onclick({
+  //     if(onHomePage) {
+  //       window.scrollTo({ top: 0, behavior: "smooth" });
+  //     },
+  //     if(onCourseDetails) {
+  //       window.scrollTo({ top: 1000, behavior: "smooth" });
+  //     },
+  //   });
+  // };
+
   return (
     <>
       <motion.div
@@ -30,7 +43,7 @@ const Navbar = () => {
         className="nav sticky bg-gradient-to-b from-black to-transparent left-0 p-6 flex justify-around items-center w-full z-50"
       >
         <div className="logo font-kanit text-3xl text-white font-semibold">
-          <Link href={"./"}>
+          <Link href={"../"}>
             <h1>
               HMusic<span className="text-yellow-500">.</span>
             </h1>{" "}

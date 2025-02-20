@@ -1,25 +1,33 @@
+// course/[id]/page.jsx
+"use client";
 import Image from "next/image";
-import Singing from "@/app/images/singingman.webp";
-import Course from "../page";
+import courses from "../courseData";
+import { useParams } from "next/navigation"; // Import useParams
+import Link from "next/link";
 
-const CourseDetails = ({courseName, Description, Duration, Time, Price}) => {
+const CourseDetails = () => {
+  const { id } = useParams(); // Get the course id from the URL
+
+  // Find the course in the data based on the id
+  const course = courses.find((c) => c.id === id);
+
+  // Handle the case where the course is not found
+  if (!course) {
+    return <div>Course not found</div>; // Or redirect, or display an error message
+  }
+
   return (
     <>
       <div
         id="details"
-        className="details w-full h-screen px-28 py-6 mb-20 flex gap-4 "
+        className="details w-full h-auto px-28 py-6 mb-20 flex flex-col md:flex-row gap-4 justify-around items-center"
       >
-        <div className="right flex flex-col gap-8 font-inter">
+        <div className="right flex flex-col gap-8 font-inter w-8/12">
           <div className="top">
             <h1 className="text-4xl underline font-bold font-kanit text-yellow-50">
-              {Course.courseName}
+              {course.courseName}
             </h1>
-            <p className="mt-2 leading-5">
-              This course is designed to help students explore and develop their
-              vocal abilities, regardless of their starting point. Whether
-              you’re a beginner or an intermediate vocalist, this program will
-              refine your skills and build your confidence in singing.
-            </p>
+            <p className="mt-2 leading-5">{course.description}</p>
           </div>
           <div className="details flex flex-col gap-6">
             <div className="1 ">
@@ -27,18 +35,20 @@ const CourseDetails = ({courseName, Description, Duration, Time, Price}) => {
               <div className="list">
                 <h1 className="font-semibold">
                   Duration:{" "}
-                  <span className="font-medium text-yellow-200">8 weeks</span>
+                  <span className="font-medium text-yellow-200">
+                    {course.duration}
+                  </span>
                 </h1>
                 <h1 className="font-semibold">
                   Classes:{" "}
                   <span className="font-medium text-yellow-200">
-                    Twice a week (1.5 hours per session)
+                    {course.classes}
                   </span>
                 </h1>
                 <h1 className="font-semibold">
                   Practical Sessions:{" "}
                   <span className="font-medium text-yellow-200">
-                    Weekly individual performance practice
+                    {course.sessions}
                   </span>
                 </h1>
               </div>
@@ -47,12 +57,9 @@ const CourseDetails = ({courseName, Description, Duration, Time, Price}) => {
               <h1 className="text-2xl font-semibold">What You'll Learn</h1>
               <div className="list">
                 <ul className="grid grid-cols-2 list-disc  list-inside">
-                  <li>Fundamentals of Singing</li>
-                  <li className="text-yellow-200">Voice Training & Control</li>
-                  <li>Music Theory for Singers</li>
-                  <li className="text-yellow-200">Performance Skills</li>
-                  <li>Advanced Techniques</li>
-                  <li className="text-yellow-200">Recording Basics</li>
+                  {course.learn.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -71,19 +78,22 @@ const CourseDetails = ({courseName, Description, Duration, Time, Price}) => {
           <Image
             className="rounded-2xl"
             alt="singing"
-            src={Singing}
+            src={course.imageSrc}
             width={900}
-          /><div className="last flex items-center justify-around">
-                <h1 className="text-white font-bold text-center">
-                  NRP 12999
-                </h1>
-                <button className="px-20 py-3 rounded-xl bg-white text-yellow-800 font-bold">
-                  Enroll Now
-                </button>
-              </div>
+            height={500}
+          />
+          <div className="last flex items-center justify-around">
+            <h1 className="text-white font-bold text-center">{course.price}</h1>
+            <Link href="/signuppage">
+              <button className="px-20 py-3 rounded-xl bg-white text-yellow-800 font-bold">
+                Enroll Now
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </>
   );
 };
+
 export default CourseDetails;

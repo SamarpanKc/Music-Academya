@@ -8,8 +8,8 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <div className="main h-screen w-full flex flex-col gap-8 md:gap-16 justify-center items-center relative">
-      <div className="bg-hero bg-cover bg-center h-full w-full absolute top-0 left-0">
+    <div className="main h-screen w-full flex flex-col gap-8 md:gap-16 justify-center items-center relative ">
+      <div className="bg-hero bg-cover bg-center h-full w-full absolute top-0 left-0 ">
         <motion.div className="circle w-80 h-48 rounded-full absolute -left-56 top-11 bg-yellow-500 blur-2xl opacity-50"></motion.div>
         <motion.div
           animate={{
