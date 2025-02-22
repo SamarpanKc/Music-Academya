@@ -7,9 +7,6 @@ import Course from "./course/page";
 import SamllCard from "./components/smallcard";
 
 // images
-import Singing from "./images/singingman.webp";
-import Guitarist from "./images/guitarist.jpg"
-import Pianoist from "./images/pianoist.jpg"
 import User1 from "./images/test1.jpg"
 import User2 from "./images/test2.jpg"
 

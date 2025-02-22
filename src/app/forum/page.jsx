@@ -1,12 +1,14 @@
-import React from 'react'
-import Forum from '../components/forums'
+import Form from "../components/forums";
+import ClientForm from "./ClientForm";
+import Esewa from "./esewa";
 
-const page = () => {
+export default async function App() {
   return (
     <>
-    <Forum />
+      <div className="container flex flex-col items-center justify-center gap-8 pt-8 pb-16">
+        <Form />
+        <ClientForm />
+      </div>
     </>
-  )
+  );
 }
-
-export default page

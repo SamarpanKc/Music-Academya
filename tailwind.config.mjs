@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
 export default {
-    darkMode: ["class"],
     content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,6 +13,7 @@ export default {
   			foreground: 'hsl(var(--foreground))',
   			orange: '#FCA311',
   			blue: '#2B50AA',
+			green: '#60bb46',
   			yellow: {
   				'50': '#fdf8ed',
   				'100': '#f8eacd',
@@ -78,9 +78,9 @@ export default {
   			kanit: [
   				'Kanit',
   				'sans-serif'
-  			]
+  			],
 		},
-  	}
+	}
   },
   plugins: [require("tailwindcss-animate")],
 };
