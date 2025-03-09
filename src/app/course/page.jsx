@@ -44,7 +44,7 @@ const Course = ({ courseName, description, duration, price, imageSrc, id }) => {
               Details
             </motion.button>
           </Link>
-          <Link href={"/forum"}>
+          <Link href={`/forum/${id}`}>
             <motion.button
               whileHover={{
                 color: "#84341c",

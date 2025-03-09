@@ -15,18 +15,19 @@ export default function ClientForm() {
   const onSubmit = (data) => console.log(data);
 
   return (
-    <div className="form flex flex-col items-center justify-center font-inter ">
+    <div className="form flex flex-col items-center justify-center font-inter">
       <form
         className="flex flex-col md:flex-row gap-8"
         onSubmit={handleSubmit(onSubmit)}
       >
-        <div className="left flex flex-col gap-4">
-          <div className="time flex flex-col">
+        <div className="left flex flex-col gap-4 ">
+          <div className="time flex flex-col w-[clamp(16rem,30vw,88rem)]">
             <label htmlFor="courseTime">Choose Compatible Time:</label>
             <select
               id="courseTime"
               name="courseTime"
               {...register("courseTime")}
+              
             >
               <option value="">Select</option>
               <option value="7 AM">7 AM</option>
